@@ -2,8 +2,8 @@ import airbnb from './assets/imgs/airbnb.png';
 
 export default function Header() {
     return (
-        <div>
+        <div className='header'>
             <img src={airbnb} alt="" />
         </div>
-    )
+    );
 }

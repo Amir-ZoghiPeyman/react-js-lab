@@ -1,4 +1,4 @@
-import airbnb from './assets/imgs/airbnb.png';
+import airbnb from '/imgs/logo/airbnb.png';
 
 export default function Header() {
     return (

@@ -1,11 +1,11 @@
-import Header from './Header.jsx';
-import Banner from './Banner.jsx';
-import Description from './Description.jsx';
-import Card from './Card.jsx';
+import Header from './components/header/index.jsx';
+import Banner from './components/banner/index.jsx';
+import Description from './components/description/index.jsx';
+import Card from './components/cards/index.jsx';
 
-import img1 from "./assets/imgs/image-1.png";
-import img2 from "./assets/imgs/image-2.png"
-import img3 from "./assets/imgs/image-3.png"
+import img1 from "/imgs/cards/image-1.png";
+import img2 from "/imgs/cards/image-2.png"
+import img3 from "/imgs/cards/image-3.png"
 
 const cardData = [
     {

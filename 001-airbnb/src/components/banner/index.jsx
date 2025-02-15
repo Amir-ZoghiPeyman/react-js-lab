@@ -1,4 +1,4 @@
-import groupImg from './assets/imgs/group.png';
+import groupImg from '/imgs/slider/Group.png';
 
 export default function Banner() {
     return (

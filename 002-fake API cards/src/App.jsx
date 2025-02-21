@@ -11,15 +11,14 @@ export default function App() {
     }, []);
 
     return (
-        <div className="mt-8 md:grid md:gap-6 md:grid-cols-4">
-            {card.map((card) => {
-                const { title, price, description, image } = card;
+        <div className="m-10 gap-6 grid lg:grid-cols-4 md:grid-cols-2">
+            {card.map(({ image, title, description, price }) => {
                 return (
                     <Cards
-                        title={title}
-                        price={price}
-                        description={description}
                         image={image}
+                        title={title}
+                        description={description}
+                        price={price}
                     />
                 );
             })}

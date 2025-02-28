@@ -17,12 +17,12 @@ export default function Contact() {
 
         const result = fetcher();
 
-        // fetch("https://randomuser.me/api/?id=374.131.949-94")
-        //   .then((res) => res.json())
-        //   .then((json) => {
-        //     setIsLoading(false);
-        //     setUser(json.results[0]);
-        //   });
+        fetch("https://randomuser.me/api/?id=374.131.949-94")
+            .then((res) => res.json())
+            .then((json) => {
+                setIsLoading(false);
+                setUser(json.results[0]);
+            });
     }, []);
 
     if (isLoading) {

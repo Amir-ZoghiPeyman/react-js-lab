@@ -13,19 +13,19 @@ function App() {
 
   return (
     <>
-    <Context.Provider value={{cart , setCart}}>
-      <Layout>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/product/:id" element={<SingleProductPage />} />
-            <Route
-              path="/shopping/:id"
-              element={<ShoppingCartPage/>}
-            />
-          </Routes>
-        </BrowserRouter>
-      </Layout>
+      <Context.Provider value={{ cart, setCart }}>
+        <Layout>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/product/:id" element={<SingleProductPage />} />
+              <Route
+                path="/shopping/:id"
+                element={<ShoppingCartPage />}
+              />
+            </Routes>
+          </BrowserRouter>
+        </Layout>
       </Context.Provider>
     </>
   );

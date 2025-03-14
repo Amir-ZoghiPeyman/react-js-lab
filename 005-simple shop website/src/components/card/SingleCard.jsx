@@ -67,18 +67,20 @@ export default function SingleCard({ image, title, price, id, icon }) {
         onClick={handleProduct}
         component="div"
         width="20rem"
-        margin="5rem auto"
+        margin="1.5rem auto"
         boxShadow="0px 0px 10px 10px rgba(0,0,0,0.2)"
         padding="1.5rem"
         borderRadius="1rem"
+        className="p-6 bg-white text-white border cursor-pointer border-gray-200 rounded-4xl shadow-2xl hover:bg-gray-700 dark:bg-gray-900 dark:border-gray-800 dark:hover:bg-gray-700 transition-all"
       >
-        <img src={image} alt="image" width="full" />
-        <h2 className="mb-[1rem] font-bold mt-[3rem]">{title}</h2>
+        <img src={image} alt="image" width="full" className="aspect-square object-cover bg-gray-200 text-5xl rounded-4xl shadow-xl mr-6 p-4" />
+        <h2 className="flex text-start lg:line-clamp-1 md:line-clamp-1 text-gray-700 dark:text-gray-400 mt-4">{title}</h2>
         <Box
           component="div"
           marginTop="1rem"
           display="flex"
           justifyContent="space-between"
+          className="my-4"
         >
           <span>${price}</span>
         </Box>
@@ -88,13 +90,13 @@ export default function SingleCard({ image, title, price, id, icon }) {
               evt.stopPropagation();
               if (quantity) remove();
             }}
-            className="bg-red-400 px-2 py-0.5 rounded-md"
+            className="w-8 mr-2 bg-red-400 px-2 py-0.5 rounded-md cursor-pointer"
           >
             -
           </button>
           {/* {quantity ? quantity : 0} */}
-          {quantity || "اضافه نشده"}
-          <button onClick={add} className="bg-green-400 px-2 py-0.5 rounded-md">
+          {quantity || "0"}
+          <button onClick={add} className="w-8 ml-2 bg-green-400 px-2 py-0.5 rounded-md cursor-pointer">
             +
           </button>
         </div>

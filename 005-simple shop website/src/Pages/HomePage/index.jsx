@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cardproduct from "../../components/Cardproducts";
+import CardProduct from "../../components/CardProducts";
 import Home from "../../components/Home";
 import Login from "../../components/Login";
 
@@ -12,7 +12,7 @@ export default function HomePage() {
     <>
       <Home />
       <div className="mb-24">
-        <Cardproduct />
+        <CardProduct />
       </div>
 
       {!(firstMeet === false) && <Login setFirstMeet={setFirstMeet} />}

@@ -1,13 +1,12 @@
-import { BottomNavigation, BottomNavigationAction } from "@mui/material";
-import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import ShoppingIcon from "../ShoppingIcon/ShoppingIcon";
+import RestoreIcon from "@mui/icons-material/Restore";
+import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { useContext } from "react";
 import { Context } from "../../App";
 
 export default function BottomNavigationBar() {
-  const {cart} = useContext(Context)
+  const { cart } = useContext(Context)
   return (
     <BottomNavigation className="fixed bottom-0 left-0 w-full">
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />

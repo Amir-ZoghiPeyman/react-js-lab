@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import SingleCard from "../components/card/SingleCard";
 import { useNavigate } from "react-router-dom";
+import SingleCard from "../components/card/SingleCard";
 
-export default function HomePage({ cart , setCart }) {
+export default function HomePage({ cart, setCart }) {
   const navigate = useNavigate();
   const [products, setProduct] = useState([]);
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function HomePage({ cart , setCart }) {
   }, []);
 
   return (
-    <>
+    <div className="m-10 gap-6 grid lg:grid-cols-4 md:grid-cols-2">
       {products.map((item) => (
         <SingleCard
           id={item.id}
@@ -28,6 +28,6 @@ export default function HomePage({ cart , setCart }) {
           image={item.image}
         />
       ))}
-    </>
+    </div>
   );
 }

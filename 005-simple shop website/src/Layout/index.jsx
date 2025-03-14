@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "../components/Header/Header";
 import BottomNavigationBar from "../components/Navigation/Navigaton";
 
